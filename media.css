@@ -21,6 +21,7 @@
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        justify-content: center;
     }
     .gallery img {
         width: 75%;
@@ -78,6 +79,7 @@
     .gallery {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
+        justify-content: center;
     }
     .gallery img {
         width: 65%;
