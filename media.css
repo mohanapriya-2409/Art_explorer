@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
         padding: 5px;
@@ -35,15 +35,19 @@
 
     .filter-buttons button {
         padding: 8px 12px;
-        font-size: 14px;
+        font-size:small;
     }
 
     .upload-section {
         flex-direction: column;
-        width: 70%;
-        padding: 10px;
+        width: 50%;
+        padding: 5px;
     }
-
+    .upload-section input, 
+        .upload-section select, 
+        .upload-section button {
+            padding: 5px;
+        }
     .modal-controls {
         flex-direction: column;
         bottom: 10px;
@@ -52,33 +56,62 @@
 }
 
 @media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 3px;
+    }
+    .navbar h1{
+        font-size: small;
+    }
+    .nav-buttons {
+        margin-top: 10px;
+        display: flex;
+        gap: 5px;
+        font-weight: 80;
+    }
+
+    .welcome-page {
+        padding: 15px;
+        text-align: center;
+    }
+
     .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
     }
+    .gallery img {
+        width: 65%;
+        height: 40%;}
 
-    .navbar h1 {
-        font-size: 20px;
-    }
-
-    .welcome-page h1 {
-        font-size: 20px;
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
     }
 
     .filter-buttons button {
-        padding: 6px 10px;
-        font-size: 12px;
+        padding: 6px 9px;
+        font-size: small;
     }
 
-    .modal {
-        padding: 10px;
+    .upload-section {
+        flex-direction: column;
+        width: 50%;
+        padding: 5px;
     }
 
-    #modal-img {
-        max-width: 100%;
-        max-height: 70%;
+    .modal-controls {
+        flex-direction: column;
+        bottom: 7px;
+        gap: 3px;
     }
+    .upload-section input, 
+        .upload-section select, 
+        .upload-section button {
+            padding: 5px;
 }
-
+}
 @media screen and (max-height: 600px) {
     .modal-controls {
         position: relative;
