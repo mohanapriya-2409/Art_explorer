@@ -3,4 +3,8 @@
         margin: 5px;
         padding: 8px 15px;
     }
+    .navbar{
+        justify-content: space-around;
+    }
+}
 }
