@@ -1,13 +1,16 @@
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
     }
-
+    .navbar h1{
+        font-size: small;
+    }
     .nav-buttons {
         margin-top: 10px;
         display: flex;
         gap: 10px;
+        font-weight: 100;
     }
 
     .welcome-page {
@@ -19,6 +22,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+    .gallery img {
+        width: 75%;
+        height: 50%;}
 
     .filter-buttons {
         display: flex;
@@ -34,7 +40,7 @@
 
     .upload-section {
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         padding: 10px;
     }
 
@@ -51,11 +57,11 @@
     }
 
     .navbar h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .welcome-page h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .filter-buttons button {
